@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.header1, .header2 {
+    background-color: rgb(255, 140, 0);
+    height: 20rem;
+    width: 50%;
+}
+
+.section-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.section {
+    background-color: rgb(123, 255, 0);
+    height: 50rem;
+    width: 100%;
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+.quadrados-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.quadrado {
+    background-color: rgb(38, 100, 167);
+    width: 40rem;
+    height: 30rem;
+}
+
+.retangulos-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.retangulo {
+    background-color: rgb(195, 195, 195);
+    width: 30%;
+    height: 12em;
+}
+
+@media (min-width: 1024px) {
+    .quadrado {
+        width: 30%;
+        height: 30rem;
+    }
+    
+    .retangulo {
+        width: 22%;
+        height: 8em; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .quadrados-content {
+        flex-direction: column; 
+    }
+
+    .quadrado {
+        width: 80%; 
+        height: 20rem; 
+        margin: 0 auto; 
+    }
+
+    .retangulos-content {
+        flex-direction: column;
+    }
+
+    .retangulo {
+        width: 80%; 
+        height: 6em; 
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .quadrados-content {
+        flex-direction: column;
+
+    .quadrado {
+        width: 90%; 
+        height: 15rem; 
+        margin: 0 auto; 
+    }
+
+    .retangulos-content {
+        flex-direction: column;
+    }
+
+    .retangulo {
+        width: 90%; 
+        height: 5em; 
+        margin: 0 auto; 
+    }
+}
+}
